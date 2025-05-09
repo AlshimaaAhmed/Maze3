@@ -9,6 +9,9 @@ public class GameOverUI : MonoBehaviour
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true; 
+        
         if (backToMenuButton != null)
             backToMenuButton.onClick.AddListener(BackToMenu);
         else

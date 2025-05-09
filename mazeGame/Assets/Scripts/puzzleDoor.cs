@@ -133,6 +133,10 @@ public class PuzzleDoorTrigger : MonoBehaviour
                 }
             }
 
+            if (playerMovementScript != null)
+            {
+                playerMovementScript.enabled = false;
+            }
 
             GetComponent<Collider>().enabled = false;
         }
