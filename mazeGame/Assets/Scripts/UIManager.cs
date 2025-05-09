@@ -202,6 +202,7 @@ public class UIManager : MonoBehaviour
 
     private void GameOver()
     {
+        DatatoBeShared.LastScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(gameOverScene);
     }
 

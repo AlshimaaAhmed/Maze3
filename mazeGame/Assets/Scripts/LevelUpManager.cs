@@ -142,6 +142,7 @@ public class LevelUpManager : MonoBehaviour
 
     public void OpenNextLevel()
     {
+        if (PlayerManager.Instance.playerData.lives < 3) PlayerManager.Instance.playerData.lives = 3;
         string nextLevelName = "Level " + PlayerManager.Instance.playerData.currentLevel;
         Debug.Log($"🔄 Navigating to scene: {nextLevelName}");
         SceneManager.LoadScene(nextLevelName);
@@ -197,11 +198,4 @@ public class LevelUpManager : MonoBehaviour
         PlayerData.SaveData(PlayerManager.Instance.playerData);
     }
 
-
-    public void ResetAllData()
-    {
-        PlayerManager.Instance.playerData = new PlayerData();
-        PlayerData.SaveData(PlayerManager.Instance.playerData);
-        Debug.Log("🔄 All data has been reset");
-    }
 }

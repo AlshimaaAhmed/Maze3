@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class PuzzleDoorTrigger : MonoBehaviour
 {
     public Transform door;
-    public Vector3 targetPosition;
+    private Vector3 targetPosition;
     public float doorSpeed = 2f;
 
     public Transform player;
@@ -64,6 +64,8 @@ public class PuzzleDoorTrigger : MonoBehaviour
         controller = player.GetComponent<CharacterController>();
         playerMovementScript = player.GetComponent<PlayerMove>();
 
+        targetPosition = new Vector3(door.position.x, door.position.y - 20f, door.position.z);
+
         if (door != null)
         {
             doorName = door.gameObject.name;
@@ -74,7 +76,6 @@ public class PuzzleDoorTrigger : MonoBehaviour
                 GetComponent<Collider>().enabled = false;
                 this.enabled = false;
                 door.position = new Vector3(door.position.x, door.position.y - 20f, door.position.z);
-                string currentScene = SceneManager.GetActiveScene().name;
             }
         }
         else
@@ -136,6 +137,7 @@ public class PuzzleDoorTrigger : MonoBehaviour
             if (playerMovementScript != null)
             {
                 playerMovementScript.enabled = false;
+               
             }
 
             GetComponent<Collider>().enabled = false;
@@ -165,14 +167,14 @@ public class PuzzleDoorTrigger : MonoBehaviour
             if (Vector3.Distance(player.position, playerTargetPosition) < 0.05f)
             {
                 playerMoving = false;
-
+               
                 StartPlayerSink();
             }
         }
 
         if (playerSinking)
         {
-
+          
             Vector3 direction = (sinkTargetPosition - player.position).normalized;
             player.position += direction * sinkSpeed * Time.deltaTime;
 
@@ -184,7 +186,7 @@ public class PuzzleDoorTrigger : MonoBehaviour
                     playerAnimator.SetTrigger("idle");
 
                 // Save the player's return position and the scene name for later
-
+           
 
                 // Transition to the next scene
                 SceneManager.LoadScene(nextSceneName);

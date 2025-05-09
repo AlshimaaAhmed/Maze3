@@ -2662,7 +2662,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 0}
-  targetPosition: {x: -18.5, y: -50, z: 26.03}
   doorSpeed: 9
   player: {fileID: 0}
   playerMoveDistance: 1
@@ -2675,7 +2674,6 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   QuestionSprite: {fileID: 0}
   BackgroundSprite: {fileID: 0}
-  returnPoint: {fileID: 0}
 --- !u!65 &200223758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6787,7 +6785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 0}
-  targetPosition: {x: -18.5, y: -50, z: 26.03}
   doorSpeed: 9
   player: {fileID: 0}
   playerMoveDistance: 1
@@ -6800,7 +6797,6 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   QuestionSprite: {fileID: 0}
   BackgroundSprite: {fileID: 0}
-  returnPoint: {fileID: 0}
 --- !u!65 &452024397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8456,7 +8452,7 @@ Transform:
   m_GameObject: {fileID: 567758168}
   serializedVersion: 2
   m_LocalRotation: {x: 0.27263096, y: -0.004380953, z: 0.001579059, w: 0.9621075}
-  m_LocalPosition: {x: -0.095273, y: -7.3924894, z: 0}
+  m_LocalPosition: {x: -0.08445553, y: -7.39249, z: 0}
   m_LocalScale: {x: 0.6888504, y: 0.68885046, z: 0.6888504}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9270,7 +9266,7 @@ Transform:
   m_GameObject: {fileID: 611622478}
   serializedVersion: 2
   m_LocalRotation: {x: 0.30740285, y: -0.00069297466, z: 0.00027861318, w: 0.9515792}
-  m_LocalPosition: {x: -0.09529206, y: -7.3924894, z: 0}
+  m_LocalPosition: {x: -0.08445553, y: -7.39249, z: 0}
   m_LocalScale: {x: 0.6888504, y: 0.68885046, z: 0.6888504}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11135,7 +11131,7 @@ Transform:
   m_GameObject: {fileID: 721852912}
   serializedVersion: 2
   m_LocalRotation: {x: 0.29004014, y: -0.0043515856, z: 0.0016582764, w: 0.9570032}
-  m_LocalPosition: {x: -0.095295876, y: -7.3924894, z: 0}
+  m_LocalPosition: {x: -0.08445553, y: -7.39249, z: 0}
   m_LocalScale: {x: 0.6888504, y: 0.68885046, z: 0.6888504}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11781,7 +11777,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 0}
-  targetPosition: {x: -18.5, y: -50, z: 26.03}
   doorSpeed: 9
   player: {fileID: 0}
   playerMoveDistance: 1
@@ -11794,7 +11789,6 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   QuestionSprite: {fileID: 0}
   BackgroundSprite: {fileID: 0}
-  returnPoint: {fileID: 0}
 --- !u!65 &761862331
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17097,7 +17091,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 0}
-  targetPosition: {x: -18.5, y: -50, z: 26.03}
   doorSpeed: 9
   player: {fileID: 0}
   playerMoveDistance: 1
@@ -17110,7 +17103,6 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   QuestionSprite: {fileID: 0}
   BackgroundSprite: {fileID: 0}
-  returnPoint: {fileID: 0}
 --- !u!65 &1080875403
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17546,8 +17538,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106713641}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.99992204, z: -0, w: -0.012487724}
-  m_LocalPosition: {x: 60.149734, y: 91.48, z: 321.89688}
+  m_LocalRotation: {x: 0, y: 0.7079601, z: -0, w: -0.7062524}
+  m_LocalPosition: {x: 69.89997, y: 91.48, z: 315.30414}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23660,7 +23652,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 0}
-  targetPosition: {x: -18.5, y: -50, z: 26.03}
   doorSpeed: 9
   player: {fileID: 0}
   playerMoveDistance: 1
@@ -23673,7 +23664,6 @@ MonoBehaviour:
   playerAnimator: {fileID: 0}
   QuestionSprite: {fileID: 0}
   BackgroundSprite: {fileID: 0}
-  returnPoint: {fileID: 0}
 --- !u!65 &1489890370
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25751,21 +25741,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38158e15eebd9e04e9ca92295fab9b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
-  targetPosition: {x: -18.5, y: -50, z: 26.03}
+  door: {fileID: 650600414}
   doorSpeed: 9
-  player: {fileID: 0}
-  playerMoveDistance: 1
+  player: {fileID: 958576822}
+  playerMoveDistance: 3
   playerMoveSpeed: 9
   sinkDepth: 9
   sinkSpeed: 9
   sinkSound: {fileID: 0}
   doorOpenSound: {fileID: 0}
   nextSceneName: RiddleScene
-  playerAnimator: {fileID: 0}
-  QuestionSprite: {fileID: 0}
-  BackgroundSprite: {fileID: 0}
-  returnPoint: {fileID: 0}
+  playerAnimator: {fileID: 2138330589}
+  QuestionSprite: {fileID: 21300000, guid: 7f040137c4efd6a41a0d1e23562c4e5d, type: 3}
+  BackgroundSprite: {fileID: 21300000, guid: c7cc021244f569046afdeb26243ca59f, type: 3}
 --- !u!65 &1600082430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32476,7 +32464,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &2032646534
 RectTransform:
@@ -34928,11 +34916,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 311.9
+      value: 315.28
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.012487724
+      value: -0.7062524
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -34940,7 +34928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.99992204
+      value: 0.7079601
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalRotation.z
@@ -34952,7 +34940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 181.431
+      value: 269.862
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

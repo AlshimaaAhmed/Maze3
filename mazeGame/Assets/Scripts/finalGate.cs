@@ -11,7 +11,7 @@ public class FinalGate : MonoBehaviour
         {
             int currentKeys = PlayerManager.Instance.playerData.keys;
 
-            if (currentKeys == 3)
+            if (currentKeys >= 3)
             {
                 SceneManager.LoadScene(nextSceneName);
             }

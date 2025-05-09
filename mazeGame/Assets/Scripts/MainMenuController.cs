@@ -5,6 +5,7 @@ public class MainMenuManager : MonoBehaviour
 {
     public void StartGame()
     {
+        int level = PlayerManager.Instance.playerData.currentLevel;
         SceneManager.LoadScene("LevelsShow");
     }
 

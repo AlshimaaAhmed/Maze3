@@ -2167,8 +2167,7 @@ Transform:
   m_GameObject: {fileID: 311759519}
   serializedVersion: 2
   m_LocalRotation: {x: 0.29004014, y: -0.0043515856, z: 0.0016582764, w: 0.9570032}
-  m_LocalPosition: {x: -1.2742045, y: -6.7257743, z: 0}
-  m_LocalPosition: {x: -0.37868038, y: -6.6739674, z: 0}
+  m_LocalPosition: {x: -0.004803655, y: -6.325069, z: 0}
   m_LocalScale: {x: 0.6888504, y: 0.68885046, z: 0.6888504}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2816,7 +2815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 44.465332, y: -12.416382}
+  m_AnchoredPosition: {x: 44.465332, y: -12.41626}
   m_SizeDelta: {x: 413.6648, y: 171.2816}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373905081
@@ -5585,9 +5584,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38158e15eebd9e04e9ca92295fab9b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1029463274}
+  door: {fileID: 0}
   doorSpeed: 9
-  player: {fileID: 740694096}
+  player: {fileID: 0}
   playerMoveDistance: 1
   playerMoveSpeed: 9
   sinkDepth: 9
@@ -5595,9 +5594,9 @@ MonoBehaviour:
   sinkSound: {fileID: 0}
   doorOpenSound: {fileID: 0}
   nextSceneName: RiddleScene
-  playerAnimator: {fileID: 702248509}
-  QuestionSprite: {fileID: 21300000, guid: 7f040137c4efd6a41a0d1e23562c4e5d, type: 3}
-  BackgroundSprite: {fileID: 21300000, guid: c7cc021244f569046afdeb26243ca59f, type: 3}
+  playerAnimator: {fileID: 0}
+  QuestionSprite: {fileID: 0}
+  BackgroundSprite: {fileID: 0}
 --- !u!65 &614920400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6637,38 +6636,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30
-      value: -1.7
+      value: 3.9
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 30.63
+      value: 30.29
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 68.9
+      value: 45.7
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.070208274
-      value: 42.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9999584
+      value: 0.7453285
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.000018966848
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9975324
-      value: 0.008867995
+      value: -0.6666974
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0021387085
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6676,12 +6668,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 531.948
-      value: 721.016
+      value: 636.375
       objectReference: {fileID: 0}
     - target: {fileID: 413848, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.245
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 419838, guid: 93f8a13fb89985e4f8d0d8ecff94969a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10111,8 +10102,7 @@ Transform:
   m_GameObject: {fileID: 984787213}
   serializedVersion: 2
   m_LocalRotation: {x: 0.30740285, y: -0.00069297466, z: 0.00027861318, w: 0.9515792}
-  m_LocalPosition: {x: -1.4006084, y: -6.7215633, z: 0}
-  m_LocalPosition: {x: -0.38164294, y: -6.673956, z: 0}
+  m_LocalPosition: {x: -0.0047844653, y: -6.325069, z: 0}
   m_LocalScale: {x: 0.6888504, y: 0.68885046, z: 0.6888504}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15568,8 +15558,7 @@ Transform:
   m_GameObject: {fileID: 1545310263}
   serializedVersion: 2
   m_LocalRotation: {x: 0.03489914, y: 0.0044899206, z: -0.00015679146, w: 0.9993808}
-  m_LocalPosition: {x: -0.000000023841858, y: 1.8800004, z: -0.9986901}
-  m_LocalPosition: {x: -0.007699646, y: 1.8799833, z: -1.2001828}
+  m_LocalPosition: {x: -0.00000061988834, y: 1.8800004, z: -2.2000005}
   m_LocalScale: {x: 0.19999999, y: 0.20000002, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16016,8 +16005,7 @@ Transform:
   m_GameObject: {fileID: 1570438807}
   serializedVersion: 2
   m_LocalRotation: {x: 0.27263096, y: -0.004380953, z: 0.001579059, w: 0.9621075}
-  m_LocalPosition: {x: -1.3634114, y: -6.722855, z: 0}
-  m_LocalPosition: {x: -0.37311256, y: -6.6739893, z: 0}
+  m_LocalPosition: {x: -0.0047920602, y: -6.325069, z: 0}
   m_LocalScale: {x: 0.6888504, y: 0.68885046, z: 0.6888504}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17407,10 +17395,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772482613}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.9975324, z: 0, w: -0.070208274}
-  m_LocalPosition: {x: 29.300568, y: 39.690002, z: 73.84422}
-  m_LocalRotation: {x: -0.000018966848, y: 0.008867995, z: -0.0021387085, w: 0.9999584}
-  m_LocalPosition: {x: -1.8047175, y: 40.029995, z: 36.4}
+  m_LocalRotation: {x: 0, y: -0.6666974, z: 0, w: 0.7453285}
+  m_LocalPosition: {x: 14.831988, y: 39.690002, z: 44.47868}
   m_LocalScale: {x: 0.92929, y: 0.92929, z: 0.92929}
   m_ConstrainProportionsScale: 0
   m_Children: []
