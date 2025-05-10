@@ -6,19 +6,19 @@ public class PuzzleDoorTrigger : MonoBehaviour
 {
     public Transform door;
     private Vector3 targetPosition;
-    public float doorSpeed = 2f;
+    private float doorSpeed = 9f;
 
     public Transform player;
-    public float playerMoveDistance = 2f;
-    public float playerMoveSpeed = 1.5f;
+    private float playerMoveDistance = 3f;
+    private float playerMoveSpeed = 3f;
 
-    public float sinkDepth = 2f;
-    public float sinkSpeed = 1f;
+    private float sinkDepth = 2f;
+    private float sinkSpeed = 2f;
 
     public AudioSource sinkSound;
     public AudioSource doorOpenSound;
 
-    public string nextSceneName = "RiddleScene";
+    private string nextSceneName = "RiddleScene";
 
     private bool doorOpened = false;
     private bool playerMoving = false;
@@ -64,7 +64,7 @@ public class PuzzleDoorTrigger : MonoBehaviour
         controller = player.GetComponent<CharacterController>();
         playerMovementScript = player.GetComponent<PlayerMove>();
 
-        targetPosition = new Vector3(door.position.x, door.position.y - 20f, door.position.z);
+        targetPosition = new Vector3(door.position.x, door.position.y - 25f, door.position.z);
 
         if (door != null)
         {
@@ -75,7 +75,7 @@ public class PuzzleDoorTrigger : MonoBehaviour
             {
                 GetComponent<Collider>().enabled = false;
                 this.enabled = false;
-                door.position = new Vector3(door.position.x, door.position.y - 20f, door.position.z);
+                door.position = new Vector3(door.position.x, door.position.y - 25f, door.position.z);
             }
         }
         else

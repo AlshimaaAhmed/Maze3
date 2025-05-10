@@ -56,7 +56,7 @@ public class UIManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "GameOver" || scene.name == "MainMenuScene" || scene.name == "Leveling up" || scene.name == "Shop")
+        if (scene.name == "GameOver" || scene.name == "MainMenuScene" || scene.name == "Leveling up" || scene.name == "Shop" || scene.name == "TR222" || scene.name == "LevelsShow")
         {
             gameObject.SetActive(false);
         }

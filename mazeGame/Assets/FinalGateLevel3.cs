@@ -9,7 +9,10 @@ public class FinalGateTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player")) 
         {
-            SceneManager.LoadScene(nextSceneName);
+            if (PlayerManager.Instance.playerData.keys >= 12)
+            {
+                SceneManager.LoadScene(nextSceneName);
+            }
         }
     }
 }
