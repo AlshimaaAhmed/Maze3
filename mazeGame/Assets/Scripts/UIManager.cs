@@ -54,7 +54,7 @@ public class UIManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "GameOver" || scene.name == "MainMenuScene" || scene.name == "Leveling up" || scene.name == "Shop")
+        if (scene.name == "GameOver" || scene.name == "MainMenuScene" || scene.name == "Leveling up" || scene.name == "Shop" || scene.name == "LevelsShow" )
         {
             gameObject.SetActive(false);
         }
@@ -223,5 +223,11 @@ public class UIManager : MonoBehaviour
         {
             Debug.Log("❌ No time boosts available.");
         }
+    }
+
+    public void BackToLevels()
+    {
+        DatatoBeShared.LastScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("LevelsShow");
     }
 }
