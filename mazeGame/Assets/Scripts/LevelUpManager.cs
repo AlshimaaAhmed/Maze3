@@ -8,7 +8,10 @@ public class LevelUpManager : MonoBehaviour
     public GameObject GoldenBox;
 
     void Start()
-    {
+    { 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        
         int currentLevel = PlayerManager.Instance.playerData.currentLevel;
         Debug.Log($"🎮 Current level: {currentLevel}");
 
