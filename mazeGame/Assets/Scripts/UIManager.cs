@@ -56,7 +56,11 @@ public class UIManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "GameOver" || scene.name == "MainMenuScene" || scene.name == "Leveling up" || scene.name == "Shop")
+        if (scene.name == "GameOver" || scene.name == "MainMenuScene" || scene.name == "Leveling up" || scene.name == "Shop" || scene.name == "TR222" || scene.name == "EndScene" || scene.name == "LevelsShow" || scene.name == "IntroScene"  )
+        {
+            gameObject.SetActive(false);
+        }
+        else if (scene.name == "RiddleScene" || scene.name == "RiddleScene2" || scene.name == "RiddleScene3" || scene.name == "RiddleScene4" || scene.name == "RiddleScene5")
         {
             gameObject.SetActive(false);
         }
