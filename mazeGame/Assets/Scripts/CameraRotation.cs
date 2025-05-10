@@ -1,4 +1,5 @@
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraRotation : MonoBehaviour
 {
@@ -11,6 +12,16 @@ public class CameraRotation : MonoBehaviour
 
     void Update()
     {
+        // ❗ Stop rotating if hovering over UI
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+        {
+            isRotating = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            return;
+        }
+
+        // 👇 Enable rotation on right-click
         if (Input.GetMouseButtonDown(1))
         {
             isRotating = true;
@@ -18,6 +29,7 @@ public class CameraRotation : MonoBehaviour
             Cursor.visible = false;
         }
 
+        // 👆 Stop rotation when releasing right-click
         if (Input.GetMouseButtonUp(1))
         {
             isRotating = false;

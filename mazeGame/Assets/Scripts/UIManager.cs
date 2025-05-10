@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
 
+    public Transform player;
     public Image[] heartIcons;
     public Image[] keyIcons;
     public Sprite activeKey;
@@ -23,6 +24,8 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI coinsText;
     public Button timeBoostButton;
     public TextMeshProUGUI boostButtonText;
+    public TextMeshProUGUI LiveText;
+    public TextMeshProUGUI KeysText;
     public Button shopButton;
 
     public string gameOverScene = "GameOver";
@@ -128,6 +131,11 @@ public class UIManager : MonoBehaviour
         {
             heartIcons[i].enabled = (i < currentHearts);
         }
+        // ✅ تحديث النص الخاص بعدد القلوب
+        if (LiveText != null)
+        {
+            LiveText.text = currentHearts.ToString();
+        }
 
         if (currentHearts <= 0)
         {
@@ -142,6 +150,11 @@ public class UIManager : MonoBehaviour
         for (int i = 0; i < keyIcons.Length; i++)
         {
             keyIcons[i].sprite = (i < currentKeys) ? activeKey : inactiveKey;
+        }
+        // ✅ تحديث النص الخاص بعدد المفاتيح
+        if (KeysText != null)
+        {
+            KeysText.text = currentKeys.ToString();
         }
     }
 
@@ -214,6 +227,7 @@ public class UIManager : MonoBehaviour
 
     public void OpenShop()
     {
+        DatatoBeShared.ReturnPosition = player.position;
         DatatoBeShared.LastScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("shop");
     }
