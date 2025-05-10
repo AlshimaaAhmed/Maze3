@@ -11,7 +11,15 @@ public class FinalGate : MonoBehaviour
         {
             int currentKeys = PlayerManager.Instance.playerData.keys;
 
-            if (currentKeys == 3)
+            if (currentKeys >= 3 && PlayerManager.Instance.playerData.currentLevel == 1)
+            {
+                SceneManager.LoadScene(nextSceneName);
+            }
+            else if (currentKeys >= 7 && PlayerManager.Instance.playerData.currentLevel == 2)
+            {
+                SceneManager.LoadScene(nextSceneName);
+            }
+            else if (currentKeys >= 12 && PlayerManager.Instance.playerData.currentLevel == 3)
             {
                 SceneManager.LoadScene(nextSceneName);
             }

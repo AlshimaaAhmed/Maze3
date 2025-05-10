@@ -28,10 +28,6 @@ public class LevelUpManager : MonoBehaviour
         {
             ShowLevel2Reward();
         }
-        else if (currentLevel >= 3)
-        {
-            HandleLevel3Reward();
-        }
     }
 
     private void ShowLevel1Reward()
@@ -93,24 +89,6 @@ public class LevelUpManager : MonoBehaviour
         }
     }
 
-    private void HandleLevel3Reward()
-    {
-        Debug.Log("🏆 Attempting to handle Level 3 reward");
-
-        if (!HasCollectedReward("Treasure"))
-        {
-            CollectReward(); // Collect before loading scene
-
-            AddReward("Treasure");
-            Debug.Log("🔄 Loading TreasureRoomScene");
-            SceneManager.LoadScene("TreasureRoomScene");
-        }
-        else
-        {
-            Debug.Log("ℹ️ Level 3 reward already collected, going to main menu");
-            SceneManager.LoadScene("MainMenuScene");
-        }
-    }
 
     private bool HasCollectedReward(string rewardName)
     {
@@ -137,6 +115,7 @@ public class LevelUpManager : MonoBehaviour
 
     public void OpenShop()
     {
+        DatatoBeShared.LastScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("Shop");
     }
 
