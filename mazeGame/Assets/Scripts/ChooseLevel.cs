@@ -19,4 +19,9 @@ public class ChooseLevel : MonoBehaviour
     {
         SceneManager.LoadScene("level 3");
     }
+    
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenuScene");
+    }
 }

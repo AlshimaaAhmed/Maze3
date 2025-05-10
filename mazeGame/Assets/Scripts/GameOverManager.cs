@@ -16,6 +16,12 @@ public class GameOverUI : MonoBehaviour
 
     public void BackToMenu()
     {
+        SceneManager.LoadScene("MainMenuScene");
+    }
+}
+/*
+    public void BackToMenu()
+    {
         for (int i = 0; i < 5; i++) { 
             PlayerManager.Instance.AddLife();
     }
@@ -23,4 +29,5 @@ public class GameOverUI : MonoBehaviour
         DatatoBeShared.ReturnPosition = Vector3.zero;
         SceneManager.LoadScene(Lastscene);
     }
-}
+    */
+
