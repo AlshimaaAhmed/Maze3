@@ -25,4 +25,9 @@ public class ChooseLevel : MonoBehaviour
         PlayerData.SaveData(PlayerManager.Instance.playerData);
         SceneManager.LoadScene("level 3");
     }
+    
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenuScene");
+    }
 }

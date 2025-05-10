@@ -21,6 +21,8 @@ public class UIManager : MonoBehaviour
     private float currentTime;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI coinsText;
+    public TextMeshProUGUI livesText;
+    public TextMeshProUGUI keysText;
     public Button timeBoostButton;
     public TextMeshProUGUI boostButtonText;
     public Button shopButton;
@@ -54,7 +56,7 @@ public class UIManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "GameOver" || scene.name == "MainMenuScene" || scene.name == "Leveling up" || scene.name == "Shop" || scene.name == "LevelsShow")
+        if (scene.name == "GameOver" || scene.name == "MainMenuScene" || scene.name == "Leveling up" || scene.name == "Shop")
         {
             gameObject.SetActive(false);
         }
@@ -129,6 +131,11 @@ public class UIManager : MonoBehaviour
             heartIcons[i].enabled = (i < currentHearts);
         }
 
+        if (livesText != null)
+        {
+            livesText.text = currentHearts.ToString();
+        }
+
         if (currentHearts <= 0)
         {
             GameOver();
@@ -142,6 +149,11 @@ public class UIManager : MonoBehaviour
         for (int i = 0; i < keyIcons.Length; i++)
         {
             keyIcons[i].sprite = (i < currentKeys) ? activeKey : inactiveKey;
+        }
+
+        if (keysText != null)
+        {
+            keysText.text = currentKeys.ToString();
         }
     }
 
@@ -223,5 +235,11 @@ public class UIManager : MonoBehaviour
         {
             Debug.Log("❌ No time boosts available.");
         }
+    }
+
+    public void BackToLevels()
+    {
+        DatatoBeShared.LastScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("LevelsShow");
     }
 }
