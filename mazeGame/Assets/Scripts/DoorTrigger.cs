@@ -34,14 +34,14 @@ public class DoorTrigger : MonoBehaviour
     public AudioSource minerSound;
 
     public Animator playerAnimator;
-    public string fallAnimationTrigger = "Sink";
-    public string idleAnimationTrigger = "Idle";
+    private string fallAnimationTrigger = "Sink";
+    private string idleAnimationTrigger = "Idle";
 
     public Transform miner;
     public Transform minerMoveTarget;
     public Animator minerAnimator;
-    public string minerWalkTrigger = "Stab";
-    public string minerIdleTrigger = "Idle";
+    private string minerWalkTrigger = "Stab";
+    private string minerIdleTrigger = "Idle";
 
     public GameObject blackScreen;
 
