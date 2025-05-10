@@ -16,6 +16,10 @@ public class GameOverUI : MonoBehaviour
 
     public void BackToMenu()
     {
+        if (PlayerManager.Instance.playerData.lives < 5) { 
+            PlayerManager.Instance.playerData.lives = 5;
+            PlayerData.SaveData(PlayerManager.Instance.playerData);
+        }
         SceneManager.LoadScene("MainMenuScene");
     }
 }

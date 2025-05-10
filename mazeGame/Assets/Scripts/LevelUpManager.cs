@@ -8,7 +8,10 @@ public class LevelUpManager : MonoBehaviour
     public GameObject GoldenBox;
 
     void Start()
-    {
+    { 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        
         int currentLevel = PlayerManager.Instance.playerData.currentLevel;
         Debug.Log($"🎮 Current level: {currentLevel}");
 
@@ -121,6 +124,11 @@ public class LevelUpManager : MonoBehaviour
 
     public void OpenNextLevel()
     {
+        if (PlayerManager.Instance.playerData.lives < 3)
+            {
+                PlayerManager.Instance.playerData.lives = 3;
+                PlayerData.SaveData(PlayerManager.Instance.playerData);
+            }
         string nextLevelName = "Level " + PlayerManager.Instance.playerData.currentLevel;
         Debug.Log($"🔄 Navigating to scene: {nextLevelName}");
         SceneManager.LoadScene(nextLevelName);
