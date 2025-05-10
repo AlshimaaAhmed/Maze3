@@ -5,11 +5,12 @@ public class MainMenuManager : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("level 1");
+        SceneManager.LoadScene("LevelsShow");
     }
 
     public void OpenShop()
     {
+        DatatoBeShared.LastScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("shop");
     }
 

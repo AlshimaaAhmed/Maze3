@@ -137,7 +137,6 @@ public class PuzzleDoorTrigger : MonoBehaviour
             if (playerMovementScript != null)
             {
                 playerMovementScript.enabled = false;
-                playerMovementScript.StopImmediately();
             }
 
             GetComponent<Collider>().enabled = false;
