@@ -230,9 +230,20 @@ public class UIManager : MonoBehaviour
 
     public void OpenShop()
     {
+        GameObject playerObj = GameObject.FindWithTag("Player");
+        if (playerObj != null)
+        {
+            DatatoBeShared.ReturnPosition = playerObj.transform.position;
+        }
+        else
+        {
+            Debug.LogWarning("🚫 Player not found! Could not save position.");
+        }
+
         DatatoBeShared.LastScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("shop");
     }
+
 
     public void UseTimeBoost()
     {
