@@ -85,8 +85,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-       
-            Debug.Log(Application.persistentDataPath);
+        Debug.Log(Application.persistentDataPath);
             shopButton.interactable = true;
             shopButton.onClick.AddListener(OpenShop);
 

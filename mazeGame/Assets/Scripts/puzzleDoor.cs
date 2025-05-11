@@ -10,10 +10,10 @@ public class PuzzleDoorTrigger : MonoBehaviour
 
     public Transform player;
     private float playerMoveDistance = 3f;
-    private float playerMoveSpeed = 3f;
+    private float playerMoveSpeed = 9f;
 
     private float sinkDepth = 2f;
-    private float sinkSpeed = 2f;
+    private float sinkSpeed = 9f;
 
     public AudioSource sinkSound;
     public AudioSource doorOpenSound;

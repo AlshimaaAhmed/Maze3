@@ -5,6 +5,7 @@ public class clueTrigger : MonoBehaviour
 {
     public GameObject cluePanel;
     public TextMeshProUGUI clueText;
+    public AudioSource clueSound;
 
     void OnTriggerEnter(Collider other)
     {
@@ -16,6 +17,9 @@ public class clueTrigger : MonoBehaviour
             string characterName = gameObject.name;
             string clue = ClueManager.Instance.GetClueForCharacter(characterName);
             clueText.text = clue;
+
+            if (clueSound != null)
+                clueSound.Play();
         }
     }
 

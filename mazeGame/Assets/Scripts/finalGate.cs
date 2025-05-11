@@ -13,14 +13,17 @@ public class FinalGate : MonoBehaviour
 
             if (currentKeys >= 3 && PlayerManager.Instance.playerData.currentLevel == 1)
             {
+                DatatoBeShared.ReturnPosition = Vector3.zero;
                 SceneManager.LoadScene(nextSceneName);
             }
             else if (currentKeys >= 7 && PlayerManager.Instance.playerData.currentLevel == 2)
             {
+                DatatoBeShared.ReturnPosition = Vector3.zero;
                 SceneManager.LoadScene(nextSceneName);
             }
             else if (currentKeys >= 12 && PlayerManager.Instance.playerData.currentLevel == 3)
             {
+                DatatoBeShared.ReturnPosition = Vector3.zero;
                 SceneManager.LoadScene(nextSceneName);
             }
             else
